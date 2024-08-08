@@ -3,7 +3,7 @@
 # Working directory
 # . or absolute path, please note that the directories following must be under root.
 root = "."
-tmp_dir = "tmp"
+tmp_dir = "/tmp"
 
 [build]
 # Array of commands to run before each build
