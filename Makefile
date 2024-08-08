@@ -4,7 +4,7 @@ run:
 
 dev: dev-build
 	@echo "Starting development server"
-	docker compose watch --no-up & docker compose up
+	docker-compose up --watch
 
 dev-build:
 	@echo "Starting development server"
