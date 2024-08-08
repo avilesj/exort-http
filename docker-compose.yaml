@@ -1,0 +1,14 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    container_name: exort-http
+    working_dir: /app
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+    ports:
+      - "4000:4000"
